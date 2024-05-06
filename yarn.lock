@@ -274,6 +274,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/rtl-detect@npm:^1":
+  version: 1.0.3
+  resolution: "@types/rtl-detect@npm:1.0.3"
+  checksum: 10c0/5ed41bd66d97a52dfcf6d715e0a447a2f88724fa442818c879c30423bf64c2f2c62091e2da62aaa02f302139f18109af5bfee6e50b3ba79899201401c49a0b09
+  languageName: node
+  linkType: hard
+
 "@typescript-eslint/parser@npm:^5.4.2 || ^6.0.0 || 7.0.0 - 7.2.0":
   version: 7.2.0
   resolution: "@typescript-eslint/parser@npm:7.2.0"
@@ -658,7 +665,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"client-only@npm:0.0.1":
+"client-only@npm:0.0.1, client-only@npm:^0.0.1":
   version: 0.0.1
   resolution: "client-only@npm:0.0.1"
   checksum: 10c0/9d6cfd0c19e1c96a434605added99dff48482152af791ec4172fb912a71cff9027ff174efd8cdb2160cc7f377543e0537ffc462d4f279bc4701de3f2a3c4b358
@@ -1657,6 +1664,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"international-types@npm:^0.8.1":
+  version: 0.8.1
+  resolution: "international-types@npm:0.8.1"
+  checksum: 10c0/a568f64a398f74affd73336e8eda488075ec328fc20e87721555e0b45e791f72132df19cadeca01d62100b77825b8da0efcfb82cdcdba021f7cc3ffe6542e537
+  languageName: node
+  linkType: hard
+
 "is-array-buffer@npm:^3.0.4":
   version: 3.0.4
   resolution: "is-array-buffer@npm:3.0.4"
@@ -2154,6 +2168,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"next-international@npm:^1.2.4":
+  version: 1.2.4
+  resolution: "next-international@npm:1.2.4"
+  dependencies:
+    client-only: "npm:^0.0.1"
+    international-types: "npm:^0.8.1"
+    server-only: "npm:^0.0.1"
+  checksum: 10c0/7564bfd46bb6a6d6e16a4070ee2be6888426a72e178430d9696d88bc3a721e7375bba3d1df806fd56187ed12aca9f69d32ecb788928a06963f30faf0d4734322
+  languageName: node
+  linkType: hard
+
 "next-template@workspace:.":
   version: 0.0.0-use.local
   resolution: "next-template@workspace:."
@@ -2161,13 +2186,16 @@ __metadata:
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
+    "@types/rtl-detect": "npm:^1"
     eslint: "npm:^8"
     eslint-config-next: "npm:14.2.3"
     eslint-config-prettier: "npm:^9.1.0"
     next: "npm:14.2.3"
+    next-international: "npm:^1.2.4"
     prettier: "npm:^3.2.5"
     react: "npm:^18"
     react-dom: "npm:^18"
+    rtl-detect: "npm:^1.1.2"
     typescript: "npm:^5"
   languageName: unknown
   linkType: soft
@@ -2633,6 +2661,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rtl-detect@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "rtl-detect@npm:1.1.2"
+  checksum: 10c0/1b92888aafca1593314f837e83fdf02eb208faae3e713ab87c176804728efd3b1980d53b64f65f1fa593348087e852c5cd729b7b9372950f6e9b7be489afc0ca
+  languageName: node
+  linkType: hard
+
 "run-parallel@npm:^1.1.9":
   version: 1.2.0
   resolution: "run-parallel@npm:1.2.0"
@@ -2691,6 +2726,13 @@ __metadata:
   bin:
     semver: bin/semver.js
   checksum: 10c0/fbfe717094ace0aa8d6332d7ef5ce727259815bd8d8815700853f4faf23aacbd7192522f0dc5af6df52ef4fa85a355ebd2f5d39f554bd028200d6cf481ab9b53
+  languageName: node
+  linkType: hard
+
+"server-only@npm:^0.0.1":
+  version: 0.0.1
+  resolution: "server-only@npm:0.0.1"
+  checksum: 10c0/4704f0ef85da0be981af6d4ed8e739d39bcfd265b9c246a684060acda5642d0fdc6daffc2308e71e2682c5f508090978802eae0a77623c9b90a49f9ae68048d6
   languageName: node
   linkType: hard
 
