@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { I18nProviderClient } from "@/lib/hooks/I18n/client";
+import { ColorSchemeScript } from "@mantine/core";
 import { getDirection } from "@/lib/hooks/I18n/direction/server";
 import {
     getCurrentLocale,
     getScopedI18n,
     getStaticParams,
 } from "@/lib/hooks/I18n/server";
+import { Providers } from "@/lib/components/Providers";
 import "./globals.css";
 
 export const generateMetadata = async (): Promise<Metadata> => {
@@ -30,10 +31,11 @@ const Layout = ({
 
     return (
         <html lang={locale} dir={direction}>
+            <head>
+                <ColorSchemeScript />
+            </head>
             <body>
-                <I18nProviderClient locale={locale}>
-                    {children}
-                </I18nProviderClient>
+                <Providers>{children}</Providers>
             </body>
         </html>
     );
