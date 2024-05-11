@@ -1,12 +1,10 @@
 import { createI18nMiddleware } from "next-international/middleware";
 import { NextRequest } from "next/server";
-import { getLocales } from "@/lib/hooks/I18n/locales/server";
-
-const { locales } = getLocales();
+import { locales, defaultLocale } from "@/lib/locales";
 
 const I18nMiddleware = createI18nMiddleware({
     locales,
-    defaultLocale: locales[0],
+    defaultLocale,
 });
 
 export const middleware = (request: NextRequest) => I18nMiddleware(request);

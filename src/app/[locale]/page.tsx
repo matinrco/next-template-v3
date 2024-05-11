@@ -1,10 +1,10 @@
-import { getScopedI18n, setStaticParamsLocale } from "@/lib/hooks/I18n/server";
+import { setStaticParamsLocale } from "@/lib/hooks/I18n/server";
+import { Root } from "@/lib/containers/Root";
 
 const Page = async ({ params: { locale } }: { params: { locale: string } }) => {
     setStaticParamsLocale(locale); // needed for static generation
-    const scopedT = await getScopedI18n("root.page");
 
-    return <p>{scopedT("title")}</p>;
+    return <Root />;
 };
 
 export default Page;

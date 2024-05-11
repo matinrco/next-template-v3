@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { ColorSchemeScript } from "@mantine/core";
-import { getDirection } from "@/lib/hooks/I18n/direction/server";
 import {
     getCurrentLocale,
     getScopedI18n,
     getStaticParams,
+    getDirection,
 } from "@/lib/hooks/I18n/server";
 import { Providers } from "@/lib/components/Providers";
-import "./globals.css";
+import "@/lib/globals.css";
 
 export const generateMetadata = async (): Promise<Metadata> => {
     const scopedT = await getScopedI18n("root.layout");

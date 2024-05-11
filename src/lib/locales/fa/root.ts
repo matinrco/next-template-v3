@@ -5,7 +5,8 @@ export default {
             description: "ساخته شده با یه نکست اپ بساز",
         },
         page: {
-            title: "اینجا صفحه اصلی‌ست",
+            title: "نکست تمپلیت",
+            author: "توسط متین رضایی",
         },
     },
 } as const;
