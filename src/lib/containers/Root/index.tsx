@@ -5,7 +5,7 @@ import { useScopedI18n } from "@/lib/hooks/I18n/client";
 
 export const Root = () => {
     const theme = useMantineTheme();
-    const scopedT = useScopedI18n("root.page");
+    const scopedT = useScopedI18n("root");
 
     return (
         <Center w="100%" h="100vh" bg="gray.2">
@@ -17,7 +17,7 @@ export const Root = () => {
                     size={`calc(${theme.fontSizes.xl} * 3)`}
                     style={{ textTransform: "uppercase" }}
                 >
-                    matin
+                    {scopedT("heading")}
                 </Title>
                 <Text ta="center">{scopedT("author")}</Text>
             </Box>
